@@ -29,6 +29,7 @@ var app = {
         if (window.navigator.msPointerEnabled) { // windows phone
             TOUCH_START = 'MSPointerDown';
         }
+        //這邊是增加事件聽取者
         document.addEventListener('deviceready', this.onDeviceReady, false);
         refreshButton.addEventListener(TOUCH_START, this.refreshDeviceList, false);
         sendButton.addEventListener(TOUCH_START, this.sendData, false);
